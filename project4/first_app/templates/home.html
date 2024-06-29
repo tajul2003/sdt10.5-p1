@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is first_app Homepage</h1>
+
+    <h2>This is</h2>
+    <h1>{{ courses | length }}</h1>
+    {{ age | add:"2" }}
+    <h1>{{ "I am Tajul'" | addslashes }}</h1>
+    <h1>{{ name | capfirst }}</h1>
+    <h1>"{{ name | center:"500" }}"</h1>
+    <h1>{{ name | cut:" " }}</h1>
+    <h1>{{ value | date:"D d M Y" }}</h1>
+    <h1>{{ empty | default:"nothing" }}</h1>
+    <h1>{{ dict | dictsort:"age" }}</h1>
+    <h1>{{ age | divisibleby:"3" }}</h1>
+    <h1>{{ age | filesizeformat }}</h1>
+    <h1>{{ courses | first }}</h1>
+    <h1>{{ courses | join:" // " }}</h1>
+    <h1>{{ courses | last }}</h1>
+    <!-- <h1>{{ number | linenumbers }}</h1> -->
+    {% for i in courses %}
+    <h3>{{i | linenumbers}}</h3>
+    {% endfor %}
+    <h4></h4>
+    <!-- <h1>{{ title }}</h1> -->
+    <h1>{{ '<h1>peoples begging</h1>' | title }}</h1>
+    <h1>{{ courses | random }}</h1>
+    <h1>{{ courses | slice:":1" }}</h1>
+    <h1>{{ value | time:"H:i" }}</h1>
+    <h1>{{ value | time:"H\h i\m" }}</h1>
+    <h1> {{'the sdhh adhsh' | truncatewords:2}}</h1>
+    <h1>You have {{ age }} tomato{{ age | pluralize }}.</h1>
+    <h1>{{ 'Earthly' | make_list }}.</h1>
+
+    <h1>{{ "I remember as a child and as a young hvgvg bjhbjhbh mhvbgjh vjhvgjhg gjhkgj uhjuh,uhug ihuih oijhoih ,
+        ghjhui, experimentation, \
+        speculation, and documentation—activities we don't normally \" | truncatewords:20 }}</h1>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
